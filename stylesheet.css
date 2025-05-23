@@ -1,0 +1,115 @@
+/* NAVBAR ----------------------------------------------------------------------------------------------------- */
+.Navbar{
+
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
+    border: 2px solid black;
+
+    Overflow: hidden;
+    border-radius: 4px;
+
+    position: -webkit-sticky;/* prezitek, pridava nejake dalsi funkce. mod/dlc pro dalsi prohlizece */
+    position: sticky;/* normální hodnota */
+
+    top: 0;
+    z-index: 9999;
+    background-color: white;
+
+    li a{
+        display: block;
+        padding: 15px 17px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        background-color: coral;
+    }
+    li>a{
+        float:right;
+    }
+
+    #logo{
+        float:left;
+        border-right: solid black 2px;
+        border-left: 0px;
+    }
+
+    li>a:hover{
+        background-color:orangered;
+    }
+    .active{
+        background-color: brown;
+    }
+
+    li>a{
+        border-left: solid black 2px;
+    }
+}
+
+/* LOGIN ----------------------------------------------------------------------------------------------------- */
+#LoginForm{
+    background-color: lightblue;
+    border: 2px solid black;
+    padding: 40px;
+    align-content: center;
+
+}
+
+/* REGISTER ----------------------------------------------------------------------------------------------------- */
+#RegisterForm{
+    background-color: lightgreen;
+    border: 2px solid black;
+    padding: 40px;
+    align-content: center;
+
+}
+
+/* TICKETS GRID ----------------------------------------------------------------------------------------------------- */
+
+#tickety_sekce {
+
+
+
+    .ticket-grid {
+        display: grid;
+        grid-template-columns: repeat(4,2fr);
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0px auto;
+    }
+
+    .ticket-item {
+        text-decoration: none;
+        color: black;
+        border: solid black;
+        padding: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .ticket-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px blue;
+    }
+
+    .ticket-item img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .ticket-item h1 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        color: black;
+    }
+
+    .ticket-item p {
+        margin-bottom: 5px;
+        font-size: 1rem;
+        color: blue;
+    }
+}
+
