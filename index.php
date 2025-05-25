@@ -1,10 +1,9 @@
 <?php
-session_start();
-if(!isset($_SESSION["user_id"])){
-    header("Location: login_page.php");
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login_page.php');
     exit();
-}else{
-    echo "čus pičus " . $_SESSION["username"];
+} else {
+    echo 'čus pičus ' . $_SESSION['username'];
 }
 
 ?>

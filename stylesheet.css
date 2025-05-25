@@ -103,13 +103,13 @@
     .ticket-item h1 {
         margin-bottom: 10px;
         font-size: 1.5rem;
-        color: black;
+        color: white;
     }
 
     .ticket-item p {
         margin-bottom: 5px;
         font-size: 1rem;
-        color: blue;
+        color: white;
     }
 }
 
